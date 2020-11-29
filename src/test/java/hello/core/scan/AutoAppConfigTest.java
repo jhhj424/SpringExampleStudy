@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AutoAppConfigTest {
 
     @Test
-    public void basicScan() throws Exception {
+    public void basicScan() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
 
         MemberService memberService = ac.getBean(MemberService.class);
